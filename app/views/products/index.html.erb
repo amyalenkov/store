@@ -1,0 +1,14 @@
+<h1>Listing
+  products <%= link_to 'New Product', new_product_path, {:class => 'btn btn-info', :style => 'color:#FFFFFF;'} %></h1>
+<div align="center">
+  <form class="form-inline">
+    <input type="text" id="field" class="input-small" placeholder="Email">
+    <input type="password" class="input-small" placeholder="Password">
+    <label class="checkbox">
+      <input type="checkbox"> Remember me
+    </label>
+    <button type="submit" class="btn">Sign in</button>
+  </form>
+</div>
+<%= render 'products'  %>
+<br>
